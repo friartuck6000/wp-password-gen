@@ -8,6 +8,7 @@ use Symfony\Component\Console\Application;
 $app = new Application();
 $app->addCommands([
     new \PasswordGen\Command\HashCommand('pass:hash'),
+    new \PasswordGen\Command\CheckCommand('pass:check'),
 ]);
 
 $app->run();
