@@ -21,7 +21,6 @@
     "require": {
         "php": ">=5.5",
         "symfony/console": "^3.0",
-        "symfony/finder": "^3.0",
         "openwall/phpass": "0.3"
     },
     "license": "MIT",
