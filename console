@@ -6,6 +6,8 @@ require_once __DIR__ .'/vendor/autoload.php';
 use Symfony\Component\Console\Application;
 
 $app = new Application();
-$app->addCommands([]);
+$app->addCommands([
+    new \PasswordGen\Command\HashCommand('pass:hash'),
+]);
 
 $app->run();
