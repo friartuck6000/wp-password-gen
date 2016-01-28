@@ -1,0 +1,17 @@
+{
+    "name": "friartuck6000/wp-password-gen",
+    "description": "Command-line password hasher for WordPress passwords",
+    "type": "project",
+    "require": {
+        "symfony/console": "^3.0",
+        "symfony/finder": "^3.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kyle Tucker",
+            "email": "kyleatucker@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
