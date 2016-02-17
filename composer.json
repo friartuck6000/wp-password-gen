@@ -2,26 +2,10 @@
     "name": "friartuck6000/wp-password-gen",
     "description": "Command-line password hasher for WordPress passwords",
     "type": "project",
-    "repositories": [
-        {
-            "type": "package",
-            "package": {
-                "name": "openwall/phpass",
-                "version": "0.3",
-                "dist": {
-                    "url": "http://www.openwall.com/phpass.phpass-0.3.tar.gz",
-                    "type": "tar"
-                },
-                "autoload": {
-                    "classmap": [ "PasswordHash.php" ]
-                }
-            }
-        }
-    ],
     "require": {
         "php": ">=5.5",
         "symfony/console": "^3.0",
-        "openwall/phpass": "0.3"
+        "friartuck6000/phpass": "^0.3"
     },
     "license": "MIT",
     "authors": [
@@ -30,7 +14,6 @@
             "email": "kyleatucker@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "PasswordGen\\": "src/"
