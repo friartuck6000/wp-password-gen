@@ -4,24 +4,44 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "943842052c5be678851270bc7a699404",
-    "content-hash": "1d8388f93a2f0ff4a38cd72efe047fbd",
+    "hash": "bb82a355904f80e4d746de261fb1bd40",
+    "content-hash": "237ced9896e9b4b03ec1c1f23b1d502f",
     "packages": [
         {
-            "name": "openwall/phpass",
-            "version": "0.3",
+            "name": "friartuck6000/phpass",
+            "version": "v0.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/friartuck6000/phpass.git",
+                "reference": "f34f23ca23163118f82bfc7863735c7d204d7505"
+            },
             "dist": {
-                "type": "tar",
-                "url": "http://www.openwall.com/phpass.phpass-0.3.tar.gz",
-                "reference": null,
-                "shasum": null
+                "type": "zip",
+                "url": "https://api.github.com/repos/friartuck6000/phpass/zipball/f34f23ca23163118f82bfc7863735c7d204d7505",
+                "reference": "f34f23ca23163118f82bfc7863735c7d204d7505",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.0"
             },
             "type": "library",
             "autoload": {
-                "classmap": [
-                    "PasswordHash.php"
-                ]
-            }
+                "psr-4": {
+                    "Phpass\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kyle Tucker",
+                    "email": "kyleatucker@gmail.com"
+                }
+            ],
+            "description": "A Composer-friendly PHPass port",
+            "time": "2016-02-17 04:30:00"
         },
         {
             "name": "symfony/console",
@@ -29,12 +49,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "00bedebdf3ddb1b5399dc015c8e1a456282f44d4"
+                "reference": "d809df0ac237c1200187b24128b77f74b95f80c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/00bedebdf3ddb1b5399dc015c8e1a456282f44d4",
-                "reference": "00bedebdf3ddb1b5399dc015c8e1a456282f44d4",
+                "url": "https://api.github.com/repos/symfony/console/zipball/d809df0ac237c1200187b24128b77f74b95f80c6",
+                "reference": "d809df0ac237c1200187b24128b77f74b95f80c6",
                 "shasum": ""
             },
             "require": {
@@ -81,7 +101,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2016-01-27 11:22:49"
+            "time": "2016-02-16 08:48:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
