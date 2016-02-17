@@ -2,6 +2,7 @@
 
 namespace PasswordGen\Command;
 
+use Phpass\PasswordHash;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
@@ -20,7 +21,7 @@ class HashCommand extends Command
     /** @const Whether to use portable hashes */
     const HASH_PORTABLE = true;
 
-    /** @var \PasswordHash */
+    /** @var PasswordHash */
     protected $phpass;
 
     /**
@@ -32,7 +33,7 @@ class HashCommand extends Command
     {
         parent::__construct($name);
 
-        $this->phpass = new \PasswordHash(self::HASH_ITERATIONS, self::HASH_PORTABLE);
+        $this->phpass = new PasswordHash(self::HASH_ITERATIONS, self::HASH_PORTABLE);
     }
 
     /**
